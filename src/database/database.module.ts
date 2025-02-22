@@ -11,7 +11,7 @@ import { Connection } from 'mongoose';
         imports: [ConfigModule],
         inject: [ConfigService],
         useFactory: (configService: ConfigService) => ({
-          uri: configService.get('DB_URI', 'mongodb+srv://sabakatamadze:qALEhZ6nVysVMsGl@cluster0.gudjj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'),
+          uri: configService.get('DB_URI', 'mongodb+srv://sabakatamadze:qALEhZ6nVysVMsGl@cluster0.gudjj.mongodb.net/animal-farm?retryWrites=true&w=majority'),
         }),
       }),
     ],

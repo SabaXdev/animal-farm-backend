@@ -6,11 +6,12 @@ import { join } from 'path';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
-  // Enable CORS
+  // Enable CORS to alloew requests from anywhere
   app.enableCors({
-    origin: 'http://localhost:4200',
+    origin: '*',
     methods: 'GET,POST,PUT,DELETE,PATCH',
     allowedHeaders: 'Content-Type,Authorization',
+    credentials: true,
   });
 
   app.use('/public', express.static(join(__dirname, '..', 'public')));
