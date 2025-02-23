@@ -8,7 +8,7 @@ async function bootstrap() {
 
   // Enable CORS to alloew requests from anywhere
   app.enableCors({
-    origin: '*',
+    origin: 'https://sabaxdev.github.io',
     methods: 'GET,POST,PUT,DELETE,PATCH',
     allowedHeaders: 'Content-Type,Authorization',
     credentials: true,

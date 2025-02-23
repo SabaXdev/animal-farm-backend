@@ -48,7 +48,7 @@ export class AnimalsService {
   }
 
   private getDefaultImage(type: string): string {
-    const baseUrl = 'http://localhost:4200/';
+    const baseUrl = 'https://sabaxdev.github.io/animal-farm-frontend/assets/images/';
     const images: { [key: string]: string } = {
       Pig: 'ღორი_ჩვეულებრივი.jpg',
       Donkey: 'ვირი.jpg',
